@@ -2,7 +2,7 @@ import wiringpi as pi
 
 def main():
 
-    LED_PIN = 8
+    LED_PIN = 7
     pi.wiringPiSetupGpio()
     pi.pinMode( LED_PIN, pi.OUTPUT )
     pi.digitalWrite( LED_PIN, pi.HIGH)
