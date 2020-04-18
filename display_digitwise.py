@@ -62,7 +62,7 @@ def display_bydigit(number, selected_digit):
     pi.digitalWrite(digit_gpio, pi.LOW)
 
 
-def display(input_num, display_time):
+def display(input_num, display_time=5):
     """
     str4桁数字列(input_num)を7セグに表示
     nums:input_num数字列のリスト
@@ -120,5 +120,5 @@ if __name__ == '__main__':
 
     input_num = argvs[1]
 
-    display(input_num, display_time=5)
+    display(input_num)
 
